@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    width: 1440px;
+    width: 90rem;
     height: 100vh;
     margin: auto;
 }
@@ -39,7 +39,7 @@ body {
 
 .social__image img {
     border-radius: 100%;
-    width: 100px;
+    width: 30%;
 }
 
 .social__content {
@@ -72,7 +72,6 @@ body {
     font-weight: bold;
     border-radius: 8px;
     margin-bottom: 20px;
-    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -81,12 +80,12 @@ body {
     color: var(--grey-900);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 23.44rem) {
     .container {
-        width: 375px;
+        width: 23.44rem;
     }
 
     .social {
-        max-width: 310px;
+        max-width: 19.36rem;
     }
 }
