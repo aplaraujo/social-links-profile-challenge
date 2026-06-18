@@ -22,14 +22,14 @@ body {
 }
 
 .container {
-    width: 90rem;
-    height: 100vh;
+    inline-size: 90rem;
+    block-size: 100vh;
     margin: auto;
 }
 
 .social {
-    max-width: 385px;
-    height: 610px;
+    max-inline-size: 24rem;
+    block-size: 38.12rem;
     background-color: var(--grey-800);
     padding: 30px;
     text-align: center;
@@ -39,7 +39,7 @@ body {
 
 .social__image img {
     border-radius: 100%;
-    width: 30%;
+    inline-size: 30%;
 }
 
 .social__content {
@@ -55,7 +55,7 @@ body {
 .social__links {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    inline-size: 100%;
     margin-top: 10px;
 }
 
@@ -80,12 +80,12 @@ body {
     color: var(--grey-900);
 }
 
-@media screen and (max-width: 23.44rem) {
+@media screen and (min-inline-size: 23.44rem) {
     .container {
-        width: 23.44rem;
+        inline-size: 23.44rem;
     }
 
     .social {
-        max-width: 19.36rem;
+        max-inline-size: 19.36rem;
     }
 }
