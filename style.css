@@ -31,9 +31,9 @@ body {
     max-inline-size: 24rem;
     block-size: 38.12rem;
     background-color: var(--grey-800);
-    padding: 30px;
+    padding: clamp(1rem, 4vw, 2rem);
     text-align: center;
-    margin: 100px auto;
+    margin: calc(15% - 100px) auto;
     border-radius: 15px;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .social__content {
-    margin-top: 15px;
+    margin-block-start: 15px;
 }
 
 .social__content-location {
@@ -56,7 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     inline-size: 100%;
-    margin-top: 10px;
+    margin-block-start: 10px;
 }
 
 .social__content-text {
@@ -80,7 +80,7 @@ body {
     color: var(--grey-900);
 }
 
-@media screen and (min-inline-size: 23.44rem) {
+@media (min-inline-size: 23.44rem) {
     .container {
         inline-size: 23.44rem;
     }
